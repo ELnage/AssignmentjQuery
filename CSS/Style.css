@@ -1,0 +1,244 @@
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+}
+#home {
+   min-height: 95vh;
+   background-image:linear-gradient(to right , rgba(214, 46, 51, 0.6) 0% 100%) 
+   , url('../images/events-heavenly-header.jpg');
+   background-position: center;
+   background-size: cover;
+   
+}
+#home #open {
+   color: #fff;
+   font-size: 25px;
+   position: absolute;
+   top: 50%;
+   left: 10px;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+}
+#home #side-nav {
+   display: none;
+   overflow: hidden;
+   padding-top: 80px;
+   height: 100%;
+   background-color: #111111;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 500;
+}
+#home #side-nav span {
+   position: absolute;
+   top: 30px;
+   right: 20px;
+   color: #fff;
+   font-size: 25px;
+   cursor: pointer;
+   transition: 0.3s;
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+}
+
+#home #side-nav li a {
+   display: inline-block;
+   font-size: 26px;
+   color: #fff;
+   padding: 18px 80px 20px 25px;
+   transition: 0.3s;
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+}
+#home #side-nav li a:hover ,
+#home #side-nav span:hover{
+   color: rgba(214, 46, 51, 0.4);
+}
+#home .text {
+   color: #fff;
+}
+#home .text h1 {
+   font-size: 65px;
+}
+#home .text p {
+   font-size: 20px;
+}
+.singer h2 {
+   color: #fff;
+   background-color: #E68285;
+   padding: 15px;
+   margin-bottom: 0;
+}
+.singer p {
+   background-color: #CCCCCC;
+   margin-bottom: 0;
+   padding: 15px;
+}
+.singer:not(:first-of-type) p {
+      display: none;
+}
+#Details {
+   background-image: linear-gradient(to right, rgba(214, 46, 51, 0.6) 0% 100%), url('../images/invitation-2508607__340.jpg');
+   background-position: center;
+   background-size: cover;
+   
+}
+#Details .countDown {
+   display: flex;
+   justify-content: space-evenly;
+   padding-inline: 50px;
+}
+
+#Details .countDown div {
+   height: 150px;
+   width: 20%;
+   border: 2px solid #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-size: 30px;
+}
+@media (max-width:776px) {
+   #Details .countDown {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #Details .countDown div {
+      margin-bottom: 20px;
+      width: 70%;
+   }
+}
+#Contact h3 {
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+.contact-info h4 {
+   font-size: 17px;
+   font-weight: 800;
+}
+.contact-info p {
+   text-align: center;
+   color: #777;
+}
+.contact-info ul.info li {
+   padding: 5px 30px;
+   color: #777;
+}
+.contact-info ul.info li i {
+   color: #D62E33;
+   margin-right: 10px;
+}
+.contact-info ul.info li a {
+   color: #777;
+}
+.contact-info ul.socail li a{
+   padding: 10px 15px;
+   border: 1px solid #777;
+   margin: 5px;
+   color: #777;
+   transition: 0.3s;
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+}
+.contact-info ul.socail li a:hover {
+   color: #fff;
+   background-color: #D62E33;
+}
+#Contact form input , #Contact form textarea {
+   width: 80%;
+   padding: 4px 10px;
+   border: 1px solid #777;
+   outline: none;
+   transition: 0.3s;
+   margin-bottom: 25px;
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+}
+#Contact form input:focus,
+#Contact form textarea:focus {
+   box-shadow:0 0 0 2px #D62E33;;
+}
+#Contact form textarea {
+   height: 150px;
+   margin-bottom: 5px;
+}
+#Contact form span {
+   font-size: 20px;
+   color: #D62E33;
+   font-weight: 600;
+}
+#Contact form button {
+   background-color: #D62E33;
+   padding: 10px 20px;
+   border: none;
+   outline: none;
+   color: #fff;
+   text-transform: uppercase;
+}
+.loading {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   background-color: #111111;
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.loader {
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   display: inline-block;
+   border-top: 4px solid #FFF;
+   border-right: 4px solid transparent;
+   box-sizing: border-box;
+   animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+   content: '';
+   box-sizing: border-box;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   border-left: 4px solid #FF3D00;
+   border-bottom: 4px solid transparent;
+   animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+body {
+   overflow: hidden;
+}
